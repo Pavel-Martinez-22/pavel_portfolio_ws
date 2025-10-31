@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavel Martinez's HTML Portfolio</title>
+  <meta name="description" content="Portfolio of Pavel Martinez showcasing digital design and web development projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Orienta&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-styles.css">
+  <link rel="stylesheet" href="css/carousel-styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="content-wrap">
+      <h1>Digital Design Work</h1>
+      <h2>Software and Web Developer</h2>
+      <p>Welcome to my digital design portfolio. This page showcases my work in Adobe Suite.</p>
+      <a class="btn" href="./index.html">Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects">
+      <div class="content-wrap divider">
+        <h2>Featured Projects</h2>
+        <p>View selected projects below.</p>
+
+        <section class="project-item">
+          <h3>Photoshop Work</h3>
+          <p>The following work was created in photoshop to promote school .</p>
+
+          <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <img src="./images/photoshop_image1.png" alt="Project 1 screenshot">
+                  <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                  <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                </div>
+              </li>
+              <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <img src="images/photoshop_image2.png" alt="Project 2 screenshot">
+                </div>
+                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <img src="images/photoshop_image3.png" alt="Project 3 screenshot">
+                </div>
+                <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <img src="images/photoshop_image4.png" alt="Project 4 screenshot">
+                </div>
+                <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+              </li>
+            </ol>
+
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1" class="carousel__navigation-button" aria-label="Go to slide 1">1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2" class="carousel__navigation-button" aria-label="Go to slide 2">2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3" class="carousel__navigation-button" aria-label="Go to slide 3">3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide4" class="carousel__navigation-button" aria-label="Go to slide 4">4</a>
+                </li>
+              </ol>
+            </aside>
+          </section>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="content-wrap">
+      <h2>Let's Keep in Touch!</h2>
+      <ul class="content-list">
+        <li><a href="mailto:email@example.com">email@example.com</a></li>
+        <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
+        <li><a href="#" target="_blank">Twitter</a></li>
+        <li><a href="#" target="_blank">LinkedIn</a></li>
+        <li><a href="#" target="_blank">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
