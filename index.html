@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavel Martinez's HTML Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Orienta&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pavel Martinez's HTML Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Orienta&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <body>
+    <header>
+      <!-- ***********************  ABOUT / PROFILE  *********************** -->
+      <div class="content-wrap">
+        <h1>Pavel Martinez | Portfolio Website</h1>
+        <h2>Software and Web developer</h2>
+        <!-- **In this section add your Job title or tagline** -->
 
-<body>
-
-  <header>
-    <!-- ***********************  ABOUT / PROFILE  *********************** -->
-    <div class="content-wrap">
-      <h1>Pavel Martinez</h1>
-      <h2>Software and Web developer </h2><!-- **In this section add your Job title or tagline** -->
-
-      <p>Welcome to my portfolio website. The purpose of this website is to showcase the projects I have built through
-        my computer
-        science education. You can visit the project links below to see the project and code I have created.</p>
-      <p><strong>Objective:</strong> As a recent computer science graduate, I am seeking to apply and expand skills in
-        technology focused career by working in a team environment that encourages innovation.</p>
-      <!-- **Add your profile copy here. Add more paragraphs or links as needed.** -->
-    </div>
-  </header>
-  <main>
-    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-    <section class="projects">
-      <div class="content-wrap divider">
-        <h2>Featured Projects</h2>
-        <p>View selected projects below.</p>
-        <!-- Copy the whole <section> block to add more projects. -->
-        <!-- Project 1 -->
-        <section class="project-item">
-          <img src="images/thumbnail-HTML_CSS_wsp.jpg" alt="HTML and CSS project thumbnail">
-           <div class="project-content">
-          <h3>HTML &amp; CSS Showcase</h3>
-          <p>This project reflects my ability to build semantically structured and responsive web pages through a series
-            of themed exercises and creative implementations. It also helps demonstrate my evolving proficiency in HTML
-            and CSS. As one of my earliest web development efforts, it serves as a benchmark for my growth in frontend
-            design and semantic coding practices.In this project I implemented custom CSS styling, created tables,
-            designed forms, and incorporated box model and layout techniques.</p>
-          <!--            <div>
+        <p>
+          Welcome to my portfolio website. The purpose of this website is to showcase the projects I
+          have built through my computer science education. You can visit the project links below to
+          see the project and code I have created.
+        </p>
+        <p>
+          <strong>Objective:</strong> As a recent computer science graduate, I am seeking to apply
+          and expand skills in technology focused career by working in a team environment that
+          encourages innovation.
+        </p>
+        <!-- **Add your profile copy here. Add more paragraphs or links as needed.** -->
+      </div>
+    </header>
+    <main>
+      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+      <section class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>View selected projects below.</p>
+          <!-- Copy the whole <section> block to add more projects. -->
+          <!-- Project 1 -->
+          <section class="project-item">
+            <img src="images/thumbnail-HTML_CSS_wsp.jpg" alt="HTML and CSS project thumbnail" />
+            <div class="project-content">
+              <h3>HTML &amp; CSS Showcase</h3>
+              <p>
+                This project reflects my ability to build semantically structured and responsive web
+                pages through a series of themed exercises and creative implementations. It also
+                helps demonstrate my evolving proficiency in HTML and CSS. As one of my earliest web
+                development efforts, it serves as a benchmark for my growth in frontend design and
+                semantic coding practices.In this project I implemented custom CSS styling, created
+                tables, designed forms, and incorporated box model and layout techniques.
+              </p>
+              <!--            <div>
             <p>The showcase includes:</p>
             <ul>
               <li>Linked multi-page website: Demonstrates navigation structure and semantic HTML organization.</li>
@@ -55,189 +64,251 @@
               <li>Form design: Implements user input forms with various field types and labels, styled with CSS.</li>
             </ul>
           </div> -->
-          <a class="btn" href="https://personal-website-e7ia.onrender.com/" target="_blank">View Project</a>
-          <a class="btn" href="https://github.com/Pavel-Martinez-22/personal_website" target="_blank">View Code</a>
-
-         
-           </div>
-        </section>
-         <!-- End of Project block. -->
-        <!-- Project 2 -->
-        <section class="project-item">
-          <img src="images/thumbnail-random_quote.jpg" alt="Random Quote Generator project thumbnail">
-          <div class="project-content">
-            <h3>PHP OOP REST API </h3>
-            <p>This project demonstrates my ability to build a PHP-based object-oriented REST API for managing
-              quotations,
-              supporting full CRUD operations via GET, POST, PUT, and DELETE requests. The backend was developed using
-              PHP
-              and PostgreSQL, with environment variables for secure configuration, and deployed to Render after local
-              testing with Postman and XAMPP. On the frontend, I used JavaScript, PHP, and CSS to fetch and display JSON
-              data returned by the API. JavaScript handles asynchronous requests and dynamically injects the content
-              into
-              the appropriate HTML elements. To streamline deployment and ensure consistency across environments, I
-              containerized the entire application using Docker and deployed it as a web service.</p>
-            <a class="btn" href="https://full-stack-api-and-random-quote-generator.onrender.com/" target="_blank">View
-              Project</a>
-            <a class="btn"
-              href="https://github.com/Pavel-Martinez-22/Full-Stack-API-and-Random-Quote-Generator?tab=readme-ov-file"
-              target="_blank">View Code</a>
-          </div>
-        </section>
-         <!-- End of Project block. -->
-        <!-- Project 3 -->
-        <section class="project-item">
-          <img src="images/thumbnail-api_states.jpg" alt="API project thumbnail">
-           <div class="project-content">
-          <h3>RESTful API using Node.js</h3>
-          <p>This project showcases my ability to build a RESTful API using Node.js, Express, and MongoDB to manage U.S.
-            state data. I structured the application using the Model-View-Controller (MVC) pattern to ensure clean
-            separation of concerns and maintainable code. The server handles full CRUD operations via GET, POST, PATCH,
-            and DELETE requests, with routes defined in Express and validated through custom middleware.
-          </p>
-          <p>
-            I used Mongoose to define and enforce a schema for MongoDB, enabling structured storage of state-specific
-            fun facts. The API merges static JSON data with dynamic database content using a custom function, allowing
-            enriched responses while preserving original metadata. I tested all endpoints locally using Postman to
-            verify proper JSON responses and error handling.
-          </p>
-          <a class="btn" href="https://full-stack-api-states.onrender.com/" target="_blank">View Project</a>
-          <a class="btn" href="https://github.com/Pavel-Martinez-22/Full-Stack-API-States/tree/main" target="_blank">View Code</a>
-           </div>
-        </section>
-        <!-- End of Project block. -->
-        <!-- Project 4 -->
-        <section class="project-item">
-          <img src="images/thumbnail-inventory_project.jpg" alt="Inventory Management project thumbnail">
-           <div class="project-content">
-          <h3>Inventory Management System Project</h3>
-          <p>This project is in collaboration with a team of four developers across three time zones to build an
-            inventory management system. We coordinated through scheduled meetings and used Git for version control and
-            seamless code integration. Our system featured a custom RESTful API built with Node.js and Express,
-            supporting full CRUD operations via GET, POST, PATCH, and DELETE requests. We integrated a PostgreSQL
-            database and implemented role-based access control to ensure secure data handling. The frontend included a
-            login screen with dynamic session management, allowing us to assign specific privileges to different user
-            roles. To enhance usability, we built an alert system that monitored inventory levels and triggered
-            automated email notifications when stock thresholds were reached — giving users real-time feedback and
-            actionable insights.</p>
-          <a class="btn" href="https://inventory-project-software-engineering-u00c.onrender.com/login.html"
-            target="_blank">View Project</a>
-          <a class="btn"
-            href="https://github.com/Pavel-Martinez-22/Inventory_Project-Software_Engineering?tab=readme-ov-file"
-            target="_blank">View Code</a>
-          
-           </div>
-        </section>
-        <!-- End of Project block. -->
-        <!-- Project 5 -->
-        <section class="project-item">
-          <img src="images/thumbnail-4.jpg" alt="Thumbnail paper and pencil">
-           <div class="project-content">
-          <h3>Digital Design Work</h3>
-          <p>This section of my portfolio highlights my digital design capabilities through projects created in Adobe
-            Creative Suite. It showcases my proficiency in Photoshop, Illustrator, Premiere Pro, and After Effects,
-            tools I’ve used to produce visually compelling graphics, polished video edits, and dynamic motion designs. .
-          </p>
-          <a class="btn" href="./design.html" target="_blank">View Projects</a>
+              <a class="btn" href="https://personal-website-e7ia.onrender.com/" target="_blank"
+                >View Project</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/Pavel-Martinez-22/personal_website"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </section>
           <!-- End of Project block. -->
-           </div>
-        </section>
+          <!-- Project 2 -->
+          <section class="project-item">
+            <img
+              src="images/thumbnail-random_quote.jpg"
+              alt="Random Quote Generator project thumbnail"
+            />
+            <div class="project-content">
+              <h3>PHP OOP REST API</h3>
+              <p>
+                This project demonstrates my ability to build a PHP-based object-oriented REST API
+                for managing quotations, supporting full CRUD operations via GET, POST, PUT, and
+                DELETE requests. The backend was developed using PHP and PostgreSQL, with
+                environment variables for secure configuration, and deployed to Render after local
+                testing with Postman and XAMPP. On the frontend, I used JavaScript, PHP, and CSS to
+                fetch and display JSON data returned by the API. JavaScript handles asynchronous
+                requests and dynamically injects the content into the appropriate HTML elements. To
+                streamline deployment and ensure consistency across environments, I containerized
+                the entire application using Docker and deployed it as a web service.
+              </p>
+              <a
+                class="btn"
+                href="https://full-stack-api-and-random-quote-generator.onrender.com/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/Pavel-Martinez-22/Full-Stack-API-and-Random-Quote-Generator?tab=readme-ov-file"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </section>
+          <!-- End of Project block. -->
+          <!-- Project 3 -->
+          <section class="project-item">
+            <img src="images/thumbnail-api_states.jpg" alt="API project thumbnail" />
+            <div class="project-content">
+              <h3>RESTful API using Node.js</h3>
+              <p>
+                This project showcases my ability to build a RESTful API using Node.js, Express, and
+                MongoDB to manage U.S. state data. I structured the application using the
+                Model-View-Controller (MVC) pattern to ensure clean separation of concerns and
+                maintainable code. The server handles full CRUD operations via GET, POST, PATCH, and
+                DELETE requests, with routes defined in Express and validated through custom
+                middleware.
+              </p>
+              <p>
+                I used Mongoose to define and enforce a schema for MongoDB, enabling structured
+                storage of state-specific fun facts. The API merges static JSON data with dynamic
+                database content using a custom function, allowing enriched responses while
+                preserving original metadata. I tested all endpoints locally using Postman to verify
+                proper JSON responses and error handling.
+              </p>
+              <a class="btn" href="https://full-stack-api-states.onrender.com/" target="_blank"
+                >View Project</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/Pavel-Martinez-22/Full-Stack-API-States/tree/main"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </section>
+          <!-- End of Project block. -->
+          <!-- Project 4 -->
+          <section class="project-item">
+            <img
+              src="images/thumbnail-inventory_project.jpg"
+              alt="Inventory Management project thumbnail"
+            />
+            <div class="project-content">
+              <h3>Inventory Management System Project</h3>
+              <p>
+                This project is in collaboration with a team of four developers across three time
+                zones to build an inventory management system. We coordinated through scheduled
+                meetings and used Git for version control and seamless code integration. Our system
+                featured a custom RESTful API built with Node.js and Express, supporting full CRUD
+                operations via GET, POST, PATCH, and DELETE requests. We integrated a PostgreSQL
+                database and implemented role-based access control to ensure secure data handling.
+                The frontend included a login screen with dynamic session management, allowing us to
+                assign specific privileges to different user roles. To enhance usability, we built
+                an alert system that monitored inventory levels and triggered automated email
+                notifications when stock thresholds were reached — giving users real-time feedback
+                and actionable insights.
+              </p>
+              <a
+                class="btn"
+                href="https://inventory-project-software-engineering-u00c.onrender.com/login.html"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/Pavel-Martinez-22/Inventory_Project-Software_Engineering?tab=readme-ov-file"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </section>
+          <!-- End of Project block. -->
+          <!-- Project 5 -->
+          <section class="project-item">
+            <img src="images/thumbnail-4.jpg" alt="Thumbnail paper and pencil" />
+            <div class="project-content">
+              <h3>Digital Design Work</h3>
+              <p>
+                This section of my portfolio highlights my digital design capabilities through
+                projects created in Adobe Creative Suite. It showcases my proficiency in Photoshop,
+                Illustrator, Premiere Pro, and After Effects, tools I’ve used to produce visually
+                compelling graphics, polished video edits, and dynamic motion designs. .
+              </p>
+              <a class="btn" href="./design.html" target="_blank">View Projects</a>
+              <!-- End of Project block. -->
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- ***********************  WORK EXPERIENCE  *********************** -->
+      <section class="work-experience">
+        <div class="content-wrap item-details divider">
+          <h2>Work Experience</h2>
+          <!-- Copy this whole <section> block to add more jobs. -->
+          <!--Job 1-->
+          <section class="job-item">
+            <div class="job-details">
+              <h3>Business / Technology Teacher</h3>
+              <p>Messmer High School</p>
+              <p>Milwaukee, WI</p>
+              <p>August 2022 June 2024</p>
+            </div>
+            <div class="job-summary">
+              <p>Job Description:</p>
+              <ul>
+                <li>
+                  Designed and delivered a winter interim course on web development fundamentals,
+                  introducing students to core concepts of HTML and CSS through hands-on projects
+                  and structured lessons.
+                </li>
+                <li>
+                  Revamped instructional content on word processing and spreadsheet applications to
+                  teach essential office tool fundamentals, embedding workforce-ready skills into
+                  student learning.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--Job 2-->
+          <section class="job-item">
+            <div class="job-items">
+              <h3>Business Teacher</h3>
+              <p>Frank Scott Bunnell High School</p>
+              <p>Stratford, CT</p>
+              <p>August 2021 - June 2022</p>
+            </div>
+            <div class="job-summary">
+              <p>Job Description:</p>
+              <ul>
+                <li>
+                  Managed dual-enrollment accounting classroom and developed structured lesson plans
+                  that met state and college-level standards, reflecting strong analytical planning
+                  and precision in content delivery.
+                </li>
+                <li>
+                  Coordinated and collaborated with fellow educators to align curriculum content and
+                  instructional pacing across multiple classrooms, ensuring continuity and equitable
+                  learning experiences.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!--Job 3-->
+          <section class="job-item">
+            <div class="job-items">
+              <h3>Business/ Technology Teacher</h3>
+              <p>Wichita South High School</p>
+              <p>Wichita, KS</p>
+              <p>August 2014 - June 2021</p>
+            </div>
+            <div class="job-summary">
+              <p>Job Description:</p>
+              <ul>
+                <li>
+                  Partnered with a district-wide committee to redesign Career and Technical
+                  Education (CTE) curriculum, contributing to the development of unified power
+                  standards and instructional frameworks.
+                </li>
+                <li>
+                  Facilitated training and mentorship for newly hired teachers in our district
+                  through a district-wide program, offering targeted guidance, instructional tools,
+                  and regular evaluations to promote long-term success.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- End of Job block. -->
+        </div>
+      </section>
+      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
+      <section class="education">
+        <div class="content-wrap item-details">
+          <h2>Education</h2>
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>Fort Hays State University, Hays, KS</h3>
+            <p>Bachelor of Science in Computer Science</p>
+            <p>Received Date: July 2025</p>
+          </section>
+          <section>
+            <h3>Kansas State University, Manhattan, KS</h3>
+            <p>Bachelor of Science in Education</p>
+            <p>December 2013</p>
+          </section>
+          <!-- End of School block. -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <ul class="content-list">
+          <li><a href="mailto:pavel.martinez.22@gmail.com">pavel.martinez.22@gmail.com</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/pavel-martinez-87b991212/ " target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://github.com/Pavel-Martinez-22" target="_blank">Github</a></li>
+        </ul>
       </div>
-    </section>
-    <!-- ***********************  WORK EXPERIENCE  *********************** -->
-    <section class="work-experience">
-      <div class="content-wrap item-details divider">
-        <h2>Work Experience</h2>
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <!--Job 1-->
-        <section class="job-item">
-          <div class="job-details">
-            <h3>Business / Technology Teacher</h3>
-            <p>Messmer High School</p>
-            <p>Milwaukee, WI</p>
-            <p>August 2022 June 2024</p>
-          </div>
-          <div class="job-summary">
-            <p>Job Description:</p>
-            <ul>
-              <li>Designed and delivered a winter interim course on web development fundamentals, introducing students
-                to core concepts of HTML and CSS through hands-on projects and structured lessons.</li>
-              <li>Revamped instructional content on word processing and spreadsheet applications to teach essential
-                office tool fundamentals, embedding workforce-ready skills into student learning.</li>
-            </ul>
-          </div>
-        </section>
-        <!--Job 2-->
-        <section class="job-item">
-          <div class="job-items">
-            <h3>Business Teacher</h3>
-            <p>Frank Scott Bunnell High School</p>
-            <p>Stratford, CT</p>
-            <p>August 2021 - June 2022</p>
-          </div>
-          <div class="job-summary">
-            <p>Job Description:</p>
-            <ul>
-              <li>Managed dual-enrollment accounting classroom and developed structured lesson plans that met state and
-                college-level standards, reflecting strong analytical planning and precision in content delivery.</li>
-              <li>Coordinated and collaborated with fellow educators to align curriculum content and instructional
-                pacing across multiple classrooms, ensuring continuity and equitable learning experiences.</li>
-            </ul>
-          </div>
-        </section>
-        <!--Job 3-->
-        <section class="job-item">
-          <div class="job-items">
-            <h3>Business/ Technology Teacher</h3>
-            <p>Wichita South High School</p>
-            <p>Wichita, KS</p>
-            <p>August 2014 - June 2021</p>
-          </div>
-          <div class="job-summary">
-            <p>Job Description:</p>
-            <ul>
-              <li>Partnered with a district-wide committee to redesign Career and Technical Education (CTE) curriculum,
-                contributing to the development of unified power standards and instructional frameworks.</li>
-              <li>Facilitated training and mentorship for newly hired teachers in our district through a district-wide
-                program, offering targeted guidance, instructional tools, and regular evaluations to promote long-term
-                success.</li>
-            </ul>
-          </div>
-        </section>
-        <!-- End of Job block. -->
-      </div>
-    </section>
-    <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-    <section class="education">
-      <div class="content-wrap item-details">
-        <h2>Education</h2>
-        <!-- Copy this whole <section> block to add more schools. -->
-        <section>
-          <h3>Fort Hays State University, Hays, KS </h3>
-          <p>Bachelor of Science in Computer Science</p>
-          <p>Received Date: July 2025</p>
-        </section>
-        <section>
-          <h3>Kansas State University, Manhattan, KS </h3>
-          <p>Bachelor of Science in Education</p>
-          <p>December 2013</p>
-        </section>
-        <!-- End of School block. -->
-      </div>
-    </section>
-  </main>
-  <footer>
-    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-    <div class="content-wrap">
-      <h2>Let's Keep in Touch!</h2>
-      <!-- Social media and contact links. Add or remove any networks. -->
-      <ul class="content-list">
-        <li><a href="mailto:pavel.martinez.22@gmail.com">pavel.martinez.22@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/pavel-martinez-87b991212/ " target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/Pavel-Martinez-22" target="_blank">Github</a></li>
-      </ul>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
