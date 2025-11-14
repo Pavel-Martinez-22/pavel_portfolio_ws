@@ -10,236 +10,233 @@
 /* Global styles
 ------------------------------------------*/
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    color: #2D2B24;
-    margin: 0;
-    padding: 0;
-    font-family: 'Orienta', sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
+  color: #2d2b24;
+  margin: 0;
+  padding: 0;
+  font-family: "Orienta", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 img {
-    width: 300px;
+  width: 300px;
 }
 
 a {
-    color: #d9cfb6;
+  color: #d9cfb6;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 h2 {
-    font-size: 45px;
+  font-size: 45px;
 }
 
 h1,
 h2 {
-    font-family: 'Merienda', cursive;
-    font-weight: 400;
-    margin: 0;
+  font-family: "Merienda", cursive;
+  font-weight: 400;
+  margin: 0;
 }
 
 .content-wrap {
-    max-width: 800px;
-    width: 85%;
-    margin: 0 auto;
-    padding: 60px 0;
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
 }
 
 h3 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.item-details h3+p {
-    font-style: italic;
+.item-details h3 + p {
+  font-style: italic;
 }
 
-.item-details h3~p {
-    margin: 0;
+.item-details h3 ~ p {
+  margin: 0;
 }
 
-.divider>section {
-    border-bottom: 1px dashed #B49275;
-    padding: 25px 0;
+.divider > section {
+  border-bottom: 1px dashed #b49275;
+  padding: 25px 0;
 }
 
-.divider>section:last-of-type {
-    border-bottom: none;
+.divider > section:last-of-type {
+  border-bottom: none;
 }
 
 /* Profile
 ------------------------------------------*/
 header {
-    background: #d9cfb6;
+  background: #d9cfb6;
 }
 
 /* Projects
 ------------------------------------------*/
 .projects {
-    background: #29313d;
-    color: #d9cfb6
+  background: #29313d;
+  color: #d9cfb6;
 }
 
 .projects a {
-    color: #B49275;
+  color: #b49275;
 }
 
 .projects .btn {
-    display: block;
-    /* replaces inline-block to allow stacking */
-    width: 125px;
-    /* or 100% for full-width buttons */
-    color: #2D2B24;
-    background: #d9cfb6;
-    text-decoration: none;
-    text-align: center;
-    padding: 8px;
-    border-radius: 4px;
-    display: inline-block;
+  display: block;
+  /* replaces inline-block to allow stacking */
+  width: 125px;
+  /* or 100% for full-width buttons */
+  color: #2d2b24;
+  background: #d9cfb6;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .projects .btn:hover {
-    background: rgba(217, 207, 182, 70%);
+  background: rgba(217, 207, 182, 70%);
 }
 
-
 .project-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #B49275;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b49275;
 }
 
 .project-item img {
-    flex-shrink: 0;
-    width: auto;
-    max-width: 300px;
-    height: auto;
-    border-radius: 4px;
-    object-fit: contain;
+  flex-shrink: 0;
+  width: auto;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: contain;
 }
 
 .project-content {
-    flex: 1;
-    min-width: 250px;
+  margin-bottom: 25px;
+  flex: 1;
+  min-width: 250px;
 }
 
 .project-item h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 /* Work Experience
 ------------------------------------------*/
 .work-experience {
-    background: #B9B19D;
+  background: #b9b19d;
 }
 
 /* Education
 ------------------------------------------*/
 .education {
-    background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
-    background-size: cover;
-    background-position: top right;
-    padding: 100px;
+  background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding: 100px;
 }
 
 .education p {
-    width: 60%;
+  width: 60%;
 }
 
 /* Contact Info
 ------------------------------------------*/
 footer {
-    background: #B49275;
+  background: #b49275;
 }
 
 .content-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .content-list a {
-    padding: 18px;
-    display: inline-block;
+  padding: 18px;
+  display: inline-block;
 }
 
 /* Contact Info
 ------------------------------------------*/
-@media screen and (min-width:750px) {
+@media screen and (min-width: 750px) {
+  header,
+  footer {
+    text-align: center;
+  }
 
-    header,
-    footer {
-        text-align: center;
-    }
+  .project-item img {
+    margin-right: 20px;
+  }
 
-    .project-item img {
-        margin-right: 20px;
-    }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
 
-    .job-item {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 20px;
-
-    }
-
-    .content-list {
-        display: flex;
-        justify-content: center;
-    }
+  .content-list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media screen and (max-width:749px) {
-    h1 {
-        font-size: 75px;
-        line-height: 1.1;
-        margin-bottom: 20px;
-    }
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 75px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
 
-    h2 {
-        line-height: 1.25;
-    }
+  h2 {
+    line-height: 1.25;
+  }
 
-    .content-list a {
-        padding: 5px;
-    }
+  .content-list a {
+    padding: 5px;
+  }
 
-    .project-item {
-        flex-direction: column;
-        align-items: center;
-        text-align: left;
-    }
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
 
-    .project-content {
-        width: 100%;
-    }
+  .project-content {
+    width: 100%;
+  }
 
-    .project-item img {
-        margin-bottom: 20px;
-    }
-
+  .project-item img {
+    margin-bottom: 20px;
+  }
 }
 
-@media screen and (max-width:700px) {
-    .education {
-        background-position: top left;
-    }
+@media screen and (max-width: 700px) {
+  .education {
+    background-position: top left;
+  }
 }
