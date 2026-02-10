@@ -1,16 +1,17 @@
-/*
-    COLOR PALETTE
-    #2D2B24 - n/a
-    #29313D - Gunmetal
-    #D9CFB6 -  Bone - rgb(217, 207, 182)
-    #B9B19D - Khaki Web
-    #B49275 - Camel
-*/
-
-/* Global styles
-------------------------------------------*/
+/*---------- CSS Variables  ----------*/
+:root {
+  /* COLOR PALETTE */
+  --dark-green: #3c8453;
+  --sandy-beige: #bcaa96;
+  --dark-gray: #222222;
+  --light-gray: #d3d4d6;
+  --off-white: #f6f6f6;
+}
+/*---------- GLOBAL STYLES ----------*/
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /* We are using the 62.5% method this will set the default to 10px, 1rem = 10px */
 }
 
 *,
@@ -19,224 +20,369 @@ html {
   box-sizing: inherit;
 }
 
+html,
 body {
-  color: #2d2b24;
+  height: 100%;
+}
+
+body {
+  background: var(--off-white);
   margin: 0;
-  padding: 0;
-  font-family: "Orienta", sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-}
-
-img {
-  width: 300px;
-}
-
-a {
-  color: #d9cfb6;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-h1 {
-  font-size: 100px;
-}
-
-h2 {
-  font-size: 45px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem; /*1rem = 10px so 1.5rem = 15px of if you, the calculation is 1.5 * 10 = 15px or 15px / 10 = 1.5 since we are using the 62.5% method */
+  line-height: 1.4; /* Sets the distance between lines of text to my liking*/
 }
 
 h1,
-h2 {
-  font-family: "Merienda", cursive;
+h2,
+h3 {
+  font-family: "Caveat", cursive;
   font-weight: 400;
   margin: 0;
 }
 
-.content-wrap {
-  max-width: 800px;
-  width: 85%;
-  margin: 0 auto;
-  padding: 60px 0;
+h1 {
+  font-size: 7rem; /* 1rem = 10px so 7rem = 70px, the calculation is 7 * 10 = 70px or 70px / 10 = 7rem since we are using the 62.5% method */
+  line-height: 0.85; /* Sets the distance between lines closer to gether.*/
+}
+
+h2 {
+  font-size: 3.6rem; /* 1rem = 10px so 3.6rem = 36px, the calculation is 3.6 * 10 = 36px or 36px / 10 = 3.6rem since we are using the 62.5% method */
 }
 
 h3 {
-  margin-bottom: 0;
+  font-size: 2.4rem; /* 1rem = 10px so 2.4rem = 24px, the calculation is 2.4 * 10 = 24px or 24px / 10 = 2.4rem since we are using the 62.5% method */
 }
 
-.item-details h3 + p {
-  font-style: italic;
-}
-
-.item-details h3 ~ p {
+header p {
   margin: 0;
 }
 
-.divider > section {
-  border-bottom: 1px dashed #b49275;
-  padding: 25px 0;
+/* link styles */
+a {
+  color: var(--dark-green);
 }
 
-.divider > section:last-of-type {
-  border-bottom: none;
-}
-
-/* Profile
-------------------------------------------*/
-header {
-  background: #d9cfb6;
-}
-
-/* Projects
-------------------------------------------*/
-.projects {
-  background: #29313d;
-  color: #d9cfb6;
-}
-
-.projects a {
-  color: #b49275;
-}
-
-.projects .btn {
-  display: block;
-  /* replaces inline-block to allow stacking */
-  width: 125px;
-  /* or 100% for full-width buttons */
-  color: #2d2b24;
-  background: #d9cfb6;
+a:hover {
+  color: var(--sandy-beige);
   text-decoration: none;
-  text-align: center;
-  padding: 8px;
-  border-radius: 4px;
+}
+
+footer a {
+  color: var(--sandy-beige);
+}
+
+footer a:hover {
+  color: var(--dark-green);
+}
+
+/* button styles */
+.btn {
+  background: var(--dark-green);
+  color: var(--off-white);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
   display: inline-block;
-}
-
-.projects .btn:hover {
-  background: rgba(217, 207, 182, 70%);
-}
-
-.project-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #b49275;
-}
-
-.project-item img {
-  flex-shrink: 0;
-  width: auto;
-  max-width: 300px;
-  height: auto;
+  padding: 7px;
+  letter-spacing: 0.1em;
+  line-height: 1;
   border-radius: 4px;
-  object-fit: contain;
+}
+.header-wrapper {
+  margin: 0 auto;
+  padding: 30px 30px 0px;
+  max-width: 900px;
+}
+.content-wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 900px;
 }
 
-.project-content {
-  margin-bottom: 25px;
-  flex: 1;
-  min-width: 250px;
+/*---------- HOME ----------*/
+.home {
+  background: url(../images/background/bg-home-office-studio.jpg) no-repeat;
+  background-size: cover; /*Scales the background image so that it completely covers the element’s area. Will crop if the aspect ratio does not match*/
+  display: flex;
+  flex-direction: column;
 }
 
-.project-item h3 {
-  margin-top: 0;
+.home .content-wrapper {
+  flex: 1 0 auto; /*Grow and shrink as needed, but do not go below the content's size*/
 }
 
-/* Work Experience
-------------------------------------------*/
-.work-experience {
-  background: #b9b19d;
+.content-bg {
+  background: rgb(255 255 255 / 0.9);
+  padding: 30px;
 }
-
-/* Education
-------------------------------------------*/
-.education {
-  background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+/*---------- RESUME ----------*/
+.body-wrapper header::before {
+  background: url(../images/background/bg-home-office-studio.jpg) center;
   background-size: cover;
-  background-position: top right;
-  padding: 100px;
+  content: ""; /*The content property with an empty value or actual value if you want to have content, must be used for the before pseudo element to work */
+  display: block;
+  height: 375px;
 }
 
-.education p {
-  width: 60%;
+.resume-section {
+  margin-bottom: 50px;
 }
 
-/* Contact Info
-------------------------------------------*/
+.resume-section h2 {
+  border-bottom: 2px dashed var(--light-gray);
+}
+
+.download-link {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
+}
+
+/* Profile */
+/* At this point there is no profile specific styling */
+
+/* Projects */
+.project-item {
+  margin: 30px 0;
+}
+
+.project-details img {
+  width: 300px;
+}
+
+/* Work Experience */
+.work-item {
+  margin: 30px 0;
+}
+
+.work-details p {
+  margin: 0;
+}
+
+/* Education */
+
+.education-item p {
+  margin: 0;
+}
+
+/*---------- RESUME ----------*/
+.design-h1 {
+  margin-top: 50px;
+}
+.design-section {
+  margin-bottom: 50px;
+}
+
+.design-section h2 {
+  border-bottom: 2px dashed var(--light-gray);
+}
+
+/* Photoshop Designs */
+.carousel {
+  list-style-type: none; /*Remove Bullet Style*/
+  width: 100%;
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling if the content exceeds the container's width */
+  padding: 30px;
+  scroll-snap-type: x mandatory; /* Enables scroll snapping, which will snap the scroll position to the nearest child element when scrolling */
+  scroll-behavior: smooth; /* Enables smooth scrolling when the user clicks on the scroll buttons */
+  scroll-marker-group: after;
+  anchor-name: --carousel; /* Defines an anchor name for the carousel, which can be used to link to it from other parts of the page */
+}
+
+.carousel::scroll-marker-group {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel li::scroll-marker {
+  content: "";
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: var(--light-gray);
+  border: 2px solid var(--dark-gray);
+  border-radius: 50%;
+}
+
+.carousel li::scroll-marker:target-current {
+  background-color: var(--dark-green);
+}
+
+.carousel::scroll-button(*) {
+  border: none;
+  background-color: var(--dark-green);
+  font-size: 3rem;
+  color: var(--off-white);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding-bottom: 0.1em;
+  cursor: pointer;
+  position: fixed;
+  position-anchor: --carousel;
+}
+
+.carousel::scroll-button(left) {
+  content: "←" / "Previous";
+  position-area: left center;
+}
+
+.carousel::scroll-button(right) {
+  content: "→" / "Next";
+  position-area: right center;
+}
+
+.carousel::scroll-button(*):hover,
+.carousel::scroll-button(*):focus {
+  opacity: 0.8;
+}
+
+.carousel::scroll-button(*):active {
+  translate: 2px 2px;
+}
+
+.carousel::scroll-button(*):disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.carousel li {
+  scroll-snap-align: center; /* Aligns the list items to the center of the carousel when snapping */
+  flex: 0 0 100%;
+  margin-right: 50px; /* Adds space between the items */
+}
+.carousel img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*---------- FOOTER ----------*/
 footer {
-  background: #b49275;
+  background: var(--dark-gray);
+  color: var(--light-gray);
 }
 
-.content-list {
-  list-style-type: none;
+.socials {
+  list-style-type: none; /*Remove Bullet Style*/
   padding: 0;
 }
 
-.content-list a {
-  padding: 18px;
+.socials li {
   display: inline-block;
+  margin-left: 10px;
 }
 
-/* Contact Info
-------------------------------------------*/
-@media screen and (min-width: 750px) {
-  header,
-  footer {
-    text-align: center;
-  }
-
-  .project-item img {
-    margin-right: 20px;
-  }
-
-  .job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-  }
-
-  .content-list {
-    display: flex;
-    justify-content: center;
-  }
+.socials img {
+  width: 32px;
 }
 
-@media screen and (max-width: 749px) {
+.socials img:hover {
+  opacity: 0.5;
+}
+
+/*---------- MEDIA QUERIES ----------*/
+@media screen and (max-width: 500px) {
+  /*---------- RESUME ----------*/
+  .body-wrapper header::before {
+    height: 200px;
+  }
+
   h1 {
-    font-size: 75px;
-    line-height: 1.1;
-    margin-bottom: 20px;
+    font-size: 5rem;
   }
 
   h2 {
-    line-height: 1.25;
+    font-size: 2.6rem;
   }
 
-  .content-list a {
-    padding: 5px;
+  /* Projects */
+  .project-details img {
+    width: 100%; /* Makes the image take up the full width of its container */
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 649px) {
+  /*---------- HOME ----------*/
+  .home .content-wrapper {
+    padding: 10px;
   }
 
-  .project-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-  }
-
-  .project-content {
-    width: 100%;
-  }
-
-  .project-item img {
-    margin-bottom: 20px;
+  .content-bg {
+    padding: 20px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .education {
-    background-position: top left;
+@media screen and (min-width: 650px) and (max-width: 859px) {
+  /* Projects */
+  .project-wrapper {
+    display: grid; /* Use CSS Grid Enables grid layout to create a two-columns or more columns in layout */
+    grid-template-columns: repeat(2, 1fr); /* Creates a grid with two equal-width columns */
+    gap: 20px; /* Adds space between grid items */
+  }
+
+  .project-details img {
+    width: 100%; /* Makes the image take up the full width of its container */
+  }
+}
+
+@media screen and (max-width: 859px) {
+  /*---------- RESUME ----------*/
+  /* Education */
+  .education-details {
+    margin: 30px 0;
+  }
+
+  /*---------- FOOTER ----------*/
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  /*---------- RESUME ----------*/
+  /* Projects */
+  .project-item {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* This defines two columns, first column is 300px wide, second column takes up the remaining space */
+    column-gap: 20px;
+  }
+
+  /* Work Experience */
+  .work-item {
+    display: grid; /* Use CSS Grid Enables grid layout to create a two-columns or more columns in layout */
+    grid-template-columns: 300px 1fr; /* This defines two columns, first column is 300px wide, second column takes up the remaining space */
+    column-gap: 20px;
+  }
+
+  .work-summary p:first-child {
+    margin-top: 0;
+  }
+
+  /* Education */
+  .education-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates a grid with two equal-width columns */
+    column-gap: 20px;
+  }
+
+  /*---------- FOOTER ----------*/
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .download-link {
+    position: absolute;
   }
 }
