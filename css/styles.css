@@ -29,8 +29,8 @@ body {
   background: var(--off-white);
   margin: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem; /*1rem = 10px so 1.5rem = 15px of if you, the calculation is 1.5 * 10 = 15px or 15px / 10 = 1.5 since we are using the 62.5% method */
-  line-height: 1.4; /* Sets the distance between lines of text to my liking*/
+  font-size: 1.5rem; 
+  line-height: 1.4; 
 }
 
 h1,
@@ -42,16 +42,16 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem; /* 1rem = 10px so 7rem = 70px, the calculation is 7 * 10 = 70px or 70px / 10 = 7rem since we are using the 62.5% method */
-  line-height: 0.85; /* Sets the distance between lines closer to gether.*/
+  font-size: 7rem; 
+  line-height: 0.85; 
 }
 
 h2 {
-  font-size: 3.6rem; /* 1rem = 10px so 3.6rem = 36px, the calculation is 3.6 * 10 = 36px or 36px / 10 = 3.6rem since we are using the 62.5% method */
+  font-size: 3.6rem; 
 }
 
 h3 {
-  font-size: 2.4rem; /* 1rem = 10px so 2.4rem = 24px, the calculation is 2.4 * 10 = 24px or 24px / 10 = 2.4rem since we are using the 62.5% method */
+  font-size: 2.4rem; 
 }
 
 header p {
@@ -103,13 +103,13 @@ footer a:hover {
 /*---------- HOME ----------*/
 .home {
   background: url(../images/background/bg-home-office-studio.jpg) no-repeat;
-  background-size: cover; /*Scales the background image so that it completely covers the element’s area. Will crop if the aspect ratio does not match*/
+  background-size: cover; 
   display: flex;
   flex-direction: column;
 }
 
 .home .content-wrapper {
-  flex: 1 0 auto; /*Grow and shrink as needed, but do not go below the content's size*/
+  flex: 1 0 auto; 
 }
 
 .content-bg {
@@ -120,7 +120,7 @@ footer a:hover {
 .body-wrapper header::before {
   background: url(../images/background/bg-home-office-studio.jpg) center;
   background-size: cover;
-  content: ""; /*The content property with an empty value or actual value if you want to have content, must be used for the before pseudo element to work */
+  content: ""; 
   display: block;
   height: 375px;
 }
@@ -184,12 +184,12 @@ footer a:hover {
   list-style-type: none; /*Remove Bullet Style*/
   width: 100%;
   display: flex;
-  overflow-x: auto; /* Enables horizontal scrolling if the content exceeds the container's width */
+  overflow-x: auto; 
   padding: 30px;
-  scroll-snap-type: x mandatory; /* Enables scroll snapping, which will snap the scroll position to the nearest child element when scrolling */
-  scroll-behavior: smooth; /* Enables smooth scrolling when the user clicks on the scroll buttons */
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth; 
   scroll-marker-group: after;
-  anchor-name: --carousel; /* Defines an anchor name for the carousel, which can be used to link to it from other parts of the page */
+  anchor-name: --carousel; 
 }
 
 .carousel::scroll-marker-group {
@@ -253,9 +253,9 @@ footer a:hover {
 }
 
 .carousel li {
-  scroll-snap-align: center; /* Aligns the list items to the center of the carousel when snapping */
+  scroll-snap-align: center; 
   flex: 0 0 100%;
-  margin-right: 50px; /* Adds space between the items */
+  margin-right: 50px;
 }
 .carousel img {
   max-width: 100%;
@@ -270,7 +270,7 @@ footer {
 }
 
 .socials {
-  list-style-type: none; /*Remove Bullet Style*/
+  list-style-type: none;
   padding: 0;
 }
 
@@ -304,7 +304,7 @@ footer {
 
   /* Projects */
   .project-details img {
-    width: 100%; /* Makes the image take up the full width of its container */
+    width: 100%; 
     margin-bottom: 10px;
   }
 }
@@ -322,13 +322,13 @@ footer {
 @media screen and (min-width: 650px) and (max-width: 859px) {
   /* Projects */
   .project-wrapper {
-    display: grid; /* Use CSS Grid Enables grid layout to create a two-columns or more columns in layout */
-    grid-template-columns: repeat(2, 1fr); /* Creates a grid with two equal-width columns */
-    gap: 20px; /* Adds space between grid items */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
   }
 
   .project-details img {
-    width: 100%; /* Makes the image take up the full width of its container */
+    width: 100%; 
   }
 }
 
@@ -351,14 +351,14 @@ footer {
   /* Projects */
   .project-item {
     display: grid;
-    grid-template-columns: 300px 1fr; /* This defines two columns, first column is 300px wide, second column takes up the remaining space */
+    grid-template-columns: 300px 1fr; 
     column-gap: 20px;
   }
 
   /* Work Experience */
   .work-item {
-    display: grid; /* Use CSS Grid Enables grid layout to create a two-columns or more columns in layout */
-    grid-template-columns: 300px 1fr; /* This defines two columns, first column is 300px wide, second column takes up the remaining space */
+    display: grid; 
+    grid-template-columns: 300px 1fr; 
     column-gap: 20px;
   }
 
@@ -369,7 +369,7 @@ footer {
   /* Education */
   .education-item {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates a grid with two equal-width columns */
+    grid-template-columns: repeat(2, 1fr); 
     column-gap: 20px;
   }
 
