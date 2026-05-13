@@ -18,4 +18,3 @@ function generateStates() {
       console.log(data);
     });
 };
-
