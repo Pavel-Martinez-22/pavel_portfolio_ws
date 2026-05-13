@@ -12,123 +12,914 @@
 
       gtag("config", "G-QSRCQCVR1R");
     </script>
+
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Imported Google Fonts CSS links -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="images/icons/pavel_favicon.svg" type="image/x-icon" />
+
+    <!--=============== REMIXICONS ===============-->
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Pavel Martinez | Portfolio Website</title>
-    <script src="api.js" defer></script>
+
+    <!--=============== CSS ===============-->
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!--=============== JavaScript ===============-->
+    <!-- Fetch API -->
+    <script src="./js/api.js" defer></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="./js/scrollreveal.min.js" defer></script>
+
+    <!-- ANIME JS -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js" defer></script>
+
+    <!-- SWIPER JS -->
+    <script src="./js/swiper-bundle.min.js" defer></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js" defer></script>
+
+    <title>Pavel Martinez | Portfolio</title>
   </head>
-  <body class="home">
-    <!-- //  INTRO  // -->
-    <div class="content-wrapper">
-      <div class="content-bg">
-        <header>
-          <!-- Start content edits below this line. -->
-          <h1>Pavel Martinez</h1>
-          <h2>Software and Web developer</h2>
 
-          <!-- End content edits here. -->
-        </header>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <div class="blob-animate"></div>
 
-        <!-- //  ABOUT ME  // -->
-        <main>
-          <!-- Start content edits below this line. -->
-          <p>
-            Welcome to my portfolio website, where I highlight the projects I've built and share a
-            bit about myself.
-          </p>
-          <p>
-            My name is Pavel Martinez, and I am a former high school teacher with ten years of
-            teaching experience. Within my ten years of teaching, I taught courses such as web
-            development, computer graphics, and video production. During my time teaching web
-            development, I guided students through the fundamentals of HTML, CSS, and JavaScript,
-            emphasizing how a strong foundation in core technologies can support growth in careers
-            shaped by emerging tools and frameworks. I recently graduated from Fort Hays State
-            University with a degree in Computer Science and am now transitioning into a career in
-            <strong>software and web development</strong>. My goal is to channel my passion for
-            technology into a professional career where I can expand my skills, and contribute to
-            impactful projects. As an individual am deeply motivated and I enjoy working with new
-            technologies, learning new programming languages, and continually acquiring new skills.
-          </p>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Pavel</a>
 
-          <p>
-            To learn more about my projects and work history, you can download my
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li>
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+
+            <li>
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+
+            <li>
+              <a href="#experience_anchor" class="nav__link">Experience</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section">
+        <div class="home__shadow"></div>
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h3 class="home__greeting">Hello, I'm</h3>
+            <h1 class="home__name">
+              Pavel <br />
+              Martinez
+            </h1>
+          </div>
+
+          <div class="home__image">
+            <div class="blob-animate"></div>
+            <!-- Replace Image -->
+            <img
+              src="./images/profile/home-profile.png"
+              alt="Pavel Martinez Profile Image"
+              class="home__profile"
+            />
+          </div>
+
+          <div class="home__info">
+            <h3 class="home__split">Creative</h3>
+            <!-- Insert profession, short text -->
+            <h2 class="home__profession-1">Web Dev &</h2>
+            <h2 class="home__profession-2">Software</h2>
+          </div>
+
+          <div class="home__social">
             <a
-              href="pdf/Pavel Martinez Resume.pdf"
-              download
-              onclick="gtag('event', 'resume_download', { event_category: 'engagement' })"
+              href="https://www.linkedin.com/in/pavel-martinez-87b991212/"
+              target="_blank"
+              rel="noopener"
+              class="home__social-link"
+              aria-label="LinkedIn"
+              onclick="gtag('event', 'linkedin_click', { event_category: 'social' })"
             >
-              resume</a
+              <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a
+              href=" https://github.com/Pavel-Martinez-22"
+              target="_blank"
+              rel="noopener"
+              class="home__social-link"
+              aria-label="Github"
             >
-            or explore the resume page on this site. Thanks for stopping by!
-          </p>
+              <i class="ri-github-line"></i>
+            </a>
+            <!--   
+            <a
+                href="https://dribbble.com/"
+                target="_blank"
+                rel="noopener"
+                class="home__social-link"
+                aria-label="Dribbble"
+              >
+                <i class="ri-dribbble-line"></i>
+              </a>
+              <a
+                href="https://about.gitlab.com/"
+                target="_blank"
+                rel="noopener"
+                class="home__social-link"
+                aria-label="GitLab"
+              >
+                <i class="ri-gitlab-line"></i>
+              </a> 
+            -->
+          </div>
 
-          <a class="btn" href="resume.html" onclick="gtag('event', 'view_resume_page')">
-            View Resume Web Page
+          <a
+            class="home__cv"
+            href="./pdf/Pavel-Martinez-Resume.pdf"
+            download
+            target="_blank"
+            onclick="gtag('event', 'resume_download', { event_category: 'engagement' })"
+          >
+            RESUME <i class="ri-file-list-2-line"></i>
           </a>
+        </div>
+      </section>
 
-          <!-- End content edits here. -->
-        </main>
-      </div>
-    </div>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__shadow"></div>
 
-    <!-- //  FOOTER INFO, SOCIAL MEDIA  // -->
-    <footer>
-      <!-- Start content edits below this line. -->
-      <p>
-        © 2026 by Pavel Martinez |
-        <a href="mailto:pavel.martinez.22@gmail.com">pavel.martinez.22@gmail.com</a>
-      </p>
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title">
+              <span>Creativity</span>
+              <br />Is My Passion
+            </h2>
 
-      <!-- Add or remove any networks. -->
-      <ul class="socials">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/pavel-martinez-87b991212"
-            target="_blank"
-            rel="noopener noreferrer"
-            onclick="gtag('event', 'linkedin_click', { event_category: 'social' })"
-            ><img src="images/icons/icon-logo-linkedin.png" alt="My LinkedIn Account"
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/Pavel-Martinez-22"
-            target="_blank"
-            rel="noopener noreferrer"
-            onclick="gtag('event', 'github_click', { event_category: 'social' })"
-            ><img src="images/icons/github.png" alt="My GitHub Account"
-          /></a>
-        </li>
-        <li>
-          <a href="#" target="_blank"
-            ><img src="images/icons/icon-logo-twitter.png" alt="My X Account"
-          /></a>
-        </li>
-        <li>
-          <a href="#" target="_blank"
-            ><img src="images/icons/icon-logo-facebook.png" alt="My Facebook Account"
-          /></a>
-        </li>
-        <li>
-          <a href="#" target="_blank"
-            ><img src="images/icons/icon-logo-youtube.png" alt="My YouTube Account"
-          /></a>
-        </li>
-        <li>
-          <a href="#" target="_blank"
-            ><img src="images/icons/icon-logo-instagram.png" alt="My Instagram Account"
-          /></a>
-        </li>
-      </ul>
-      <!-- End content edits here. -->
+            <p class="about__description">
+              I'm a web <strong>developer and designer</strong> passionate about experimenting with
+              new
+              <strong>skills and creativity.</strong>
+              Driven by learning and curiosity, I'm always looking to explore and learn new
+              development and design skills.
+            </p>
+
+            <a
+              class="button"
+              href="./pdf/Pavel-Martinez-Resume.pdf"
+              download
+              target="_blank"
+              onclick="gtag('event', 'resume_download', { event_category: 'engagement' })"
+              >RESUME <i class="ri-file-list-2-line"></i
+            ></a>
+          </div>
+
+          <div class="about__image">
+            <div class="blob-animate"></div>
+            <div class="blob-animate"></div>
+            <img
+              src="./images/profile/about-profile.png"
+              alt="Pavel Martinez Profile Image 2"
+              class="about__profile"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">
+          I Make Incredible<br />
+          <span>Projects</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <!-- PROJECT CARDS Swiper Container -->
+          <div class="projects__swiper swiper">
+            <!-- PROJECT CARDS -->
+            <div class="swiper-wrapper">
+              <!-- Project 1 -->
+              <article class="projects__card swiper-slide">
+                <div class="blob top__blob"></div>
+
+                <div class="projects__number">
+                  <h1>01</h1>
+                  <h3>React Application</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Front-End<br />
+                    State Data
+                  </h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">React, Axios</p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="images/Standard-PPI(500px-wide)/project-states-app-react-500px.jpg"
+                    srcset="images/2X-PPI(1000px-wide)/project-states-app-react-1000px.jpg 2x"
+                    alt="React Front-End for State Data"
+                    width=""
+                    height=""
+                    class="projects__img"
+                  />
+                </div>
+
+                <div class="projects__Link__btns">
+                  <a
+                    class="projects__button"
+                    href="https://react-states-app.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="React Application App Project"
+                    onclick="gtag('event', 'State_Frontend', { event_category: 'engagement' })"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    class="projects__button"
+                    href="https://github.com/Pavel-Martinez-22/react-states-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="React Application App Code"
+                  >
+                    View Code
+                  </a>
+                </div>
+                <div class="blob bottom__blob"></div>
+              </article>
+
+              <!-- Project 2 -->
+              <article class="projects__card swiper-slide">
+                <div class="blob top__blob"></div>
+
+                <div class="projects__number">
+                  <h1>02</h1>
+                  <h3>RESTful API</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Back-End<br />
+                    State Data
+                  </h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">Node.js, Express, and MongoDB</p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="images/Standard-PPI(500px-wide)/project-api-states-500px.jpg"
+                    srcset="images/2X-PPI(1000px-wide)/project-api-states-1000px.jpg 2x"
+                    alt="RESTful API Image"
+                    width=""
+                    height=""
+                    class="projects__img"
+                  />
+                </div>
+
+                <div class="projects__Link__btns">
+                  <a
+                    class="projects__button"
+                    href="https://full-stack-api-states.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="RESTful API Node.js App Project"
+                    onclick="gtag('event', 'State_Backend', { event_category: 'engagement' })"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    class="projects__button"
+                    href="https://github.com/Pavel-Martinez-22/Full-Stack-API-States/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="RESTful API Node.js App Code"
+                  >
+                    View Code
+                  </a>
+                </div>
+                <div class="blob bottom__blob"></div>
+              </article>
+
+              <!-- Project 3 -->
+              <article class="projects__card swiper-slide">
+                <div class="blob top__blob"></div>
+
+                <div class="projects__number">
+                  <h1>03</h1>
+                  <h3>Web Application</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Front-End<br />
+                    Quote Data
+                  </h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="images/Standard-PPI(500px-wide)/project-random-quote-500px.jpg"
+                    srcset="images/2X-PPI(1000px-wide)/project-random-quote-1000px.jpg 2x"
+                    alt="PHP OOP RESTful API Image"
+                    width=""
+                    height=""
+                    class="projects__img"
+                  />
+                </div>
+
+                <div class="projects__Link__btns">
+                  <a
+                    class="projects__button"
+                    href="https://quotes-app-xvx0.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="PHP OOP RESTful API App Project"
+                    onclick="gtag('event', 'Quote_Frontend', { event_category: 'engagement' })"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    class="projects__button"
+                    href="https://github.com/Pavel-Martinez-22/quotes-app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="PHP OOP RESTful API App Code"
+                  >
+                    View Code
+                  </a>
+                </div>
+                <div class="blob bottom__blob"></div>
+              </article>
+
+              <!-- Project 4 -->
+              <article class="projects__card swiper-slide">
+                <div class="blob top__blob"></div>
+
+                <div class="projects__number">
+                  <h1>04</h1>
+                  <h3>RESTful API</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Back-End<br />
+                    Quote Data
+                  </h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">PHP, PostgreSQL, XAMPP, Docker</p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="images/Standard-PPI(500px-wide)/project-quote-api-500px.jpg"
+                    srcset="images/2X-PPI(1000px-wide)/project-quote-api-1000px.jpg"
+                    alt="PHP OOP RESTful API Image"
+                    width=""
+                    height=""
+                    class="projects__img"
+                  />
+                </div>
+
+                <div class="projects__Link__btns">
+                  <a
+                    class="projects__button"
+                    href="https://full-stack-api-and-random-quote-generator.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="PHP OOP RESTful API App Project"
+                    onclick="gtag('event', 'Quote_Backend', { event_category: 'engagement' })"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    class="projects__button"
+                    href="https://github.com/Pavel-Martinez-22/Full-Stack-API-and-Random-Quote-Generator?tab=readme-ov-file"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="PHP OOP RESTful API App Code"
+                  >
+                    View Code
+                  </a>
+                </div>
+                <div class="blob bottom__blob"></div>
+              </article>
+
+              <!-- Project 5 -->
+              <article class="projects__card swiper-slide">
+                <div class="blob top__blob"></div>
+
+                <div class="projects__number">
+                  <h1>05</h1>
+                  <h3>Web Application</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Task List<br />
+                    Application
+                  </h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="images/Standard-PPI(500px-wide)/project-task-web-app-500px.jpg"
+                    srcset="images/2X-PPI(1000px-wide)/project-task-web-app-1000px.jpg 2x"
+                    alt="Task Web Application Image"
+                    width=""
+                    height=""
+                    class="projects__img"
+                  />
+                </div>
+
+                <div class="projects__Link__btns">
+                  <a
+                    class="projects__button"
+                    href="https://task-web-app-7mg4.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Task Web Application App Project"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    class="projects__button"
+                    href="https://github.com/Pavel-Martinez-22/task_web_app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Task Web Applications App Code"
+                    onclick="gtag('event', 'Task_App', { event_category: 'engagement' })"
+                  >
+                    View Code
+                  </a>
+                </div>
+                <div class="blob bottom__blob"></div>
+              </article>
+
+              <!-- Project 6 -->
+              <article class="projects__card swiper-slide">
+                <div class="blob top__blob"></div>
+
+                <div class="projects__number">
+                  <h1>06</h1>
+                  <h3>Web Application</h3>
+                </div>
+
+                <div class="projects__data">
+                  <h1 class="projects__title">
+                    Inventory Management<br />
+                    System Project
+                  </h1>
+                  <p class="projects__subtitle">Technologies used</p>
+                  <p class="projects__description">HTML, CSS, JavaScript, Node.js, Express</p>
+                </div>
+
+                <div class="projects__image">
+                  <img
+                    src="images/Standard-PPI(500px-wide)/project-inventory-project-500px.jpg"
+                    srcset="images/2X-PPI(1000px-wide)/project-inventory-project-1000px.jpg 2x"
+                    alt="Inventory Management System Project image"
+                    width=""
+                    height=""
+                    class="projects__img"
+                  />
+                </div>
+
+                <div class="projects__Link__btns">
+                  <a
+                    class="projects__button"
+                    href="https://inventory-project-software-engineering-u00c.onrender.com/login.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Task Web Application App Project"
+                    onclick="gtag('event', 'Inventory_App', { event_category: 'engagement' })"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    class="projects__button"
+                    href="https://github.com/Pavel-Martinez-22/Inventory_Project-Software_Engineering?tab=readme-ov-file"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Task Web Applications App Code"
+                  >
+                    View Code
+                  </a>
+                </div>
+                <div class="blob bottom__blob"></div>
+              </article>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== WORK ====================-->
+      <section class="work section" id="experience_anchor">
+        <h2 class="section__title">
+          <span>My Work & Education</span>
+          <br />Experience
+        </h2>
+        <!-- Classes .work__container encapsulates work and education -->
+        <div class="work__container container grid">
+          <div class="work__tabs">
+            <!-- Button Experience -->
+            <button type="button" class="work__button work-active" data-target="#experience">
+              Experience <i class="ri-briefcase-3-line"></i>
+            </button>
+
+            <!-- Button Education -->
+            <button type="button" class="work__button" data-target="#education">
+              Education <i class="ri-graduation-cap-line"></i>
+            </button>
+          </div>
+          <!-- Classes .work__area encapsulates work and education -->
+          <div class="work__area">
+            <div class="work__line"></div>
+
+            <!-- Content Experience -->
+            <div class="work__content work-active" data-content id="experience">
+              <!-- Work Experience 1 -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Substitute<br />
+                      Teacher
+                    </h1>
+                    <h3 class="work__subtitle">Clark County High School</h3>
+                  </div>
+
+                  <h2 class="work__year">
+                    Present<br />
+                    <span class="work__year__sec">2025</span>
+                  </h2>
+                </div>
+
+                <div class="work__description">
+                  <p>Key contributions:</p>
+                  <ul>
+                    <li>
+                      Implemented teacher lesson plans while providing instructional support to
+                      students encountering challenges with course material.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Work Experience 2 -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Business / Technology<br />
+                      Teacher
+                    </h1>
+                    <h3 class="work__subtitle">Messmer High School</h3>
+                  </div>
+
+                  <h2 class="work__year">
+                    2024
+                    <span class="work__year__sec">2022</span>
+                  </h2>
+                </div>
+
+                <div class="work__description">
+                  <p>Key contributions:</p>
+                  <ul>
+                    <li>
+                      Designed and delivered a winter interim course on web development
+                      fundamentals, introducing students to core concepts of HTML and CSS through
+                      hands-on projects and structured lessons.
+                    </li>
+                    <li>
+                      Revamped instructional content on word processing and spreadsheet applications
+                      to teach essential office tool fundamentals, embedding workforce-ready skills
+                      into student learning.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Work Experience 3 -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Business<br />
+                      Teacher
+                    </h1>
+                    <h3 class="work__subtitle">Google Inc</h3>
+                  </div>
+
+                  <h2 class="work__year">2021</h2>
+                </div>
+
+                <div class="work__description">
+                  <p>Key contributions:</p>
+                  <ul>
+                    <li>
+                      Managed dual-enrollment accounting classroom and developed structured lesson
+                      plans that met state and college-level standards, reflecting strong analytical
+                      planning and precision in content delivery.
+                    </li>
+                    <li>
+                      Coordinated and collaborated with fellow educators to align curriculum content
+                      and instructional pacing across multiple classrooms, ensuring continuity and
+                      equitable learning experiences.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Work Experience 4 -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Business/ Technology<br />
+                      Teacher
+                    </h1>
+                    <h3 class="work__subtitle">Wichita South High School</h3>
+                  </div>
+
+                  <h2 class="work__year">2014</h2>
+                </div>
+
+                <div class="work__description">
+                  <p>Key contributions:</p>
+                  <ul>
+                    <li>
+                      Partnered with a district-wide committee to redesign Career and Technical
+                      Education (CTE) curriculum, contributing to the development of unified power
+                      standards and instructional frameworks.
+                    </li>
+                    <li>
+                      Facilitated training and mentorship for newly hired teachers in our district
+                      through a district-wide program, offering targeted guidance, instructional
+                      tools, and regular evaluations to promote long-term success.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Education -->
+            <div class="work__content" data-content id="education">
+              <!-- Education Experience 1 -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Bachelor of Science<br />
+                      in Computer Science
+                    </h1>
+                    <h3 class="work__subtitle">Fort Hays State University</h3>
+                  </div>
+
+                  <h2 class="work__year">2025</h2>
+                </div>
+
+                <p class="work__description">
+                  The Bachelor of Science in Computer Science at Fort Hays State University provides
+                  a comprehensive foundation in key areas of the discipline, including programming,
+                  information security, data structures and algorithms, software engineering,
+                  computer networks, database systems, and computer graphics.
+                </p>
+              </div>
+
+              <!-- Education Experience 2 -->
+              <div class="work__card">
+                <div class="work__data">
+                  <div>
+                    <h1 class="work__title">
+                      Bachelor of Science<br />
+                      in Education
+                    </h1>
+                    <h3 class="work__subtitle">Kansas State University</h3>
+                  </div>
+
+                  <h2 class="work__year">2013</h2>
+                </div>
+
+                <p class="work__description">
+                  K-State's Bachelor of Science degree in educational studies prepares students to
+                  participate in shaping and making educational policy, working with youth in
+                  non-school settings, preparing for international teaching or participating in the
+                  entrepreneurial realm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="skills">
+        <h2 class="section__title">What I <span>Offer</span></h2>
+
+        <div class="services__container container grid">
+          <!-- Services Developer -->
+          <div class="services__card services-open">
+            <div class="blob"></div>
+
+            <div class="services__data">
+              <h2 class="services__title">Web Dev</h2>
+              <p class="services__description">
+                I have a strong foundation in full-stack web development with experience in both
+                front-end and back-end development. I build professional, high-quality websites with
+                a strong emphasis on clean, semantically structured HTML and accessibility best
+                practices.
+              </p>
+            </div>
+
+            <div class="services__info">
+              <h3 class="services__subtitle">Skills & Tools</h3>
+
+              <ul class="services__skills">
+                <li class="services__skill">HTML</li>
+                <li class="services__skill">CSS</li>
+                <li class="services__skill">WordPress</li>
+                <li class="services__skill">JavaScript</li>
+                <li class="services__skill">React</li>
+                <li class="services__skill">Node JS</li>
+                <li class="services__skill">Mongoose</li>
+                <li class="services__skill">MongoDB</li>
+                <li class="services__skill">SQL</li>
+                <li class="services__skill">Photoshop</li>
+                <li class="services__skill">Illustrator</li>
+                <li class="services__skill">Premiere</li>
+              </ul>
+            </div>
+
+            <button type="button" class="services__button" aria-label="Expand services">
+              <i class="ri-arrow-down-s-line" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <!-- Services Design -->
+          <div class="services__card services-close">
+            <div class="blob blob-2"></div>
+
+            <div class="services__data">
+              <h2 class="services__title">Software Dev</h2>
+              <p class="services__description">
+                I have a strong foundation in programming languages and a deep understanding of data
+                structures and algorithms. My experience includes applying object-oriented and
+                modular design principles—leveraging classes, inheritance, and polymorphism—to
+                create scalable, maintainable, and well-structured software architectures.
+              </p>
+            </div>
+
+            <div class="services__info">
+              <h3 class="services__subtitle">Skills & Tools</h3>
+
+              <ul class="services__skills">
+                <li class="services__skill">JAVA</li>
+                <li class="services__skill">C++</li>
+                <li class="services__skill">ASM</li>
+                <li class="services__skill">Docker</li>
+                <li class="services__skill">Git</li>
+                <li class="services__skill">Eclipse</li>
+                <li class="services__skill">Visual Studio</li>
+              </ul>
+            </div>
+
+            <button type="button" class="services__button" aria-label="Expand services">
+              <i class="ri-arrow-down-s-line" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIALS ====================-->
+      <!--  TODO: Implement Testimonials -->
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__data">
+            <h2 class="section__title">Contact Me</h2>
+
+            <p class="contact__description">
+              I would welcome the opportunity to meet and learn more about the goals of your company
+              and to discuss how I could contribute to its success.
+            </p>
+
+            <button class="contact__button button" id="contact-btn">
+              Copy email <i class="ri-file-copy-line"></i>
+              <!-- Enter your email address -->
+              <span class="contact__email" id="contact-email">pavel.martinez.22@gmail.com</span>
+            </button>
+          </div>
+
+          <div class="contact__content grid">
+            <div class="contact__info grid">
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <address class="contact__address">pavel.martinez.22@gmail.com</address>
+              </div>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <address class="contact__address">Las Vegas, Nevada</address>
+              </div>
+            </div>
+
+            <div class="contact__social">
+              <h3 class="contact__title">Social Media</h3>
+
+              <div class="contact__links">
+                <a
+                  href="https://www.linkedin.com/in/pavel-martinez-87b991212/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                  onclick="gtag('event', 'linkedin_click', { event_category: 'social' })"
+                >
+                  Linkedin
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+
+                <a
+                  href="https://github.com/Pavel-Martinez-22/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                  onclick="gtag('event', 'github_click', { event_category: 'social' })"
+                >
+                  GitHub
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+
+                <!-- 
+                <a
+                  href="https://www.dribbble.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                >
+                  Dribbble
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a>
+
+                <a
+                  href="https://www.about.gitlab.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact__link"
+                >
+                  GitLab
+                  <i class="ri-arrow-right-up-long-line"></i>
+                </a> 
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer grid">
+      <div class="blob-animate"></div>
+
+      <div class="footer__copy">All Rights Reserved By <span>Pavel Martinez</span></div>
+
+      <div class="footer__year">&#169; <span id="footer-year">Year Javascript Insert</span></div>
     </footer>
   </body>
 </html>
