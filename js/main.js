@@ -150,6 +150,7 @@ window.addEventListener("scroll", scrollActive);
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
+/*
 // Respect user "reduced motion" preference
 if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   ScrollReveal().destroy();
@@ -182,3 +183,4 @@ sr.reveal(`.about__image`, { origin: "right" });
 
 
 sr.reveal(`.services__card`, { interval: 100 })
+*/
