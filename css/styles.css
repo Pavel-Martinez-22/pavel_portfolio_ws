@@ -65,13 +65,33 @@
     --smaller-font-size: 0.813rem;
   }
 }
-
-/*=============== BASE ===============*/
+/*=============== RESET ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+/*=============== GLOBAL/ BASE ===============*/
 
 html {
   scroll-behavior: smooth;
@@ -88,11 +108,6 @@ body {
   color: var(--text-color);
 }
 
-button {
-  outline: none;
-  border: none;
-}
-
 h1,
 h2,
 h3,
@@ -100,20 +115,6 @@ h4 {
   color: var(--title-color);
   font-family: var(--second-font);
   font-weight: var(--font-semi-bold);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
